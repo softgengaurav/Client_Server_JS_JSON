@@ -1,0 +1,92 @@
+<html>
+<head>
+<script language="javascript" src="main2.js"></script>
+<style type="text/css">
+.q
+{
+border:1px solid indigo;
+border-radius:10px;
+margin:5px;
+padding:20px;
+margin-left:100px;
+color:white;
+background-color:indigo;
+}
+
+.idle
+{
+border:1px solid indigo;
+border-radius:10px;
+margin:5px;
+padding:20px;
+margin-left:100px;
+color:white;
+background-color:indigo;
+}
+
+.idle:hover
+{
+border:1px solid maroon;
+padding:20px;
+margin-left:100px;
+color:white;
+background-color:maroon;
+}
+
+.correct
+{
+border-radius:10px;
+margin:5px;
+border:1px solid green;
+padding:20px;
+margin-left:100px;
+color:white;
+background-color:green;
+}
+
+.incorrect
+{
+border-radius:10px;
+margin:5px;
+border:1px solid red;
+padding:20px;
+margin-left:100px;
+color:white;
+background-color:red;
+}
+
+h1,h4
+{
+float:left;
+display:inline-block;
+border:2px solid pink;
+padding:5px;
+border-radius:10px;
+background-color:lightyellow;
+font-size:12pt;
+font-family:Comic Sans MS;
+}
+
+#mainarea
+{
+background-color:none;
+}
+
+</style>
+</head>
+<body>
+<h4>Timer</h4>
+<h4 id="c">0</h4>
+<div id="mainarea">
+<div class="q" id="ques"></div>
+<div class="idle" id="op1"></div>
+<div class="idle" id="op2"></div>
+<div class="idle" id="op3"></div>
+<div class="idle" id="op4"></div>
+</div>
+
+<input type="button" id="b1" value="alert" onclick="disappear()">
+<input type="button" value="PREV" onclick="prev_item()">
+<input type="button" value="NEXT" onclick="next_item()">
+</body>
+</html>
